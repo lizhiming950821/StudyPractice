@@ -32,3 +32,11 @@ public class People {
         this.age = age;
     }
 }
+class Teacher extends People{
+
+    public Teacher(String name, int age) {
+        super(name, age);
+    }
+
+
+}
