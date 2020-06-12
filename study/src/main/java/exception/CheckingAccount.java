@@ -6,7 +6,7 @@ import java.io.*;
  * @Author zhiming.li
  * @Date 2020/6/10 11:25
  */
-//此类模拟银行账户
+//模拟银行账户
 public class CheckingAccount
 {
     //balance为余额，number为卡号
