@@ -1,6 +1,7 @@
 package lambda;
 
 import javax.swing.*;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Timer;
@@ -22,4 +23,15 @@ public class LambdaTest {
 ////    // 接收一个String对象，并在控制台打印，不返回任何值
 ////    (String s) -> System.out.print(s)
 
+    public static void main(String[] args) {
+        String[] planets = new String[]{"mercury", "venus", "earth", "mars"};
+        System.out.println(Arrays.toString(planets));
+
+        Arrays.sort(planets);
+        System.out.println(Arrays.toString(planets));
+
+        Arrays.sort(planets, (first, second) -> first.length() - second.length());
+        System.out.println(Arrays.toString(planets));
+
+    }
 }
